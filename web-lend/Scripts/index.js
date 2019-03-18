@@ -18,4 +18,10 @@
         "phone": ""
     };
 
+
+    // PAGE INDIC HANDLER
+    $('.dot').click((e) => {
+        console.log($(this).index());
+    });
+
 })

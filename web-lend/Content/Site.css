@@ -1,8 +1,12 @@
 ﻿body {
     font-family: 'Questrial', sans-serif;
     background-color: #808080;
-    padding: 50px 30px;
     text-align: center;
+    padding:0;
+    margin:0;
+}
+.outer {
+    padding:60px;
 }
 .qpage {
     display:inline-block;
@@ -27,8 +31,12 @@
 }
 
 .page-indic {
-    border:1px solid red;
-    padding:20px;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+
+    border: 1px solid red;
+    padding: 20px;
 }
     .page-indic span.dot {
         cursor:pointer;
