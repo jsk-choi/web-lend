@@ -1,5 +1,4 @@
 ﻿$(() => {
-    console.log('durr');
 
     var formModel = {
         "goal": "",
@@ -18,10 +17,16 @@
         "phone": ""
     };
 
-
     // PAGE INDIC HANDLER
     $('.dot').click((e) => {
-        console.log($(this).index());
-    });
 
+        var selIdx = $(e.target).index();
+
+        $('.dot.selected').removeClass('selected');
+        $('.dot').eq(selIdx).addClass('selected');
+
+        $('.qpage').fadeOut(500);
+        $('.qpage').eq(selIdx).fadeIn(500);
+
+    });
 })

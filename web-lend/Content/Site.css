@@ -9,14 +9,22 @@
     padding:60px;
 }
 .qpage {
-    display:inline-block;
+
+    /*display:inline-block;*/
+
+    position:absolute;
+
+    left: 0;
+    right: 0;
+    margin: auto;
+
     padding:40px;
-    margin:0 auto;
+
+    /*margin:0 auto;*/
+
     background-color:#c6c6c6;
-    border-radius:10px;
 }
     .qpage:not(:first-child) {
-        background-color:turquoise;
         display:none;
     }
 
@@ -35,7 +43,6 @@
     bottom: 0;
     width:100%;
 
-    border: 1px solid red;
     padding: 20px;
 }
     .page-indic span.dot {
@@ -47,9 +54,12 @@
         border:2px solid #302828;
         display: inline-block;
     }
-    .page-indic span.dot.selected {
-        background-color: red;
-    }
+        .page-indic span.dot:hover {
+            background-color: #ff6a00;
+        }
+        .page-indic span.dot.selected {
+            background-color: red;
+        }
 
     @media only screen and (max-width: 600px) {
         body {
